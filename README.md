@@ -1,13 +1,13 @@
-# PageURLClassifier
+# WebPageContentAnalyser
 Given any page (URL), be able to classify the page, and return a list of relevant topics.
 
 ### Run:
 Execute following command from the home directory of the project
-java -jar Assignment.jar <URL> (e.g. java -jar Assignment.jar "http://www.cnn.com/2013/06/10/politics/edward-snowden-profile/")
+java -jar Assignment.jar <URL> (e.g. java -jar Assignment.jar http://www.cnn.com/2013/06/10/politics/edward-snowden-profile/)
  
 ### Algorithm:
 
-1. The given URL is parsed using Soup library. We ignore non-alphanumeric characters, special characters and punctuation marks to prepare text representing the Title and Body.
+1. The given URL is parsed using Jsoup library. We ignore non-alphanumeric characters, special characters and punctuation marks to prepare text representing the Title and Body.
 
 2. This returned text in String form is used to create a HashMap of words and their frequency of occurrences.
    
